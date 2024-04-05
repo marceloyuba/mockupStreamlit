@@ -10,10 +10,16 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-with st.container():
-    image_column, image_column = st.columns((2, 2))
-    with image_column:
-        st.image("scr/guarda.png")
+image = st.image("scr/guarda.png")
+
+# Aplica estilos CSS para centrar la imagen
+image.markdown(
+    f'<style>div.Widget.row-widget.stImage > div{{
+        width: 100%;
+        text-align: center;
+    }}</style>',
+    unsafe_allow_html=True,
+)
     
 
 # ---- HEADER SECTION ----
