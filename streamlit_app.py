@@ -12,19 +12,26 @@ local_css("style/style.css")
 # ---- HEADER SECTION ----
 with st.container():    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
-    st.header("Muestra parcial del Deploy de Strategic Data Transform")
-    st.markdown('<style>h1 {color: white;}</style>', unsafe_allow_html=True)
-    st.title("Consultora de informacion de Latino America")
-    st.markdown('<style>h4 {color: white;}, font=</style>', unsafe_allow_html=True)
-    st.header("A continuacion mostramos el Deploy de descripcio de el proyecto, endpoints y Dashboard")
+    st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
+    st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+    
+    st.title("Muestra parcial del Deploy de Strategic Data Transform")
+   
+    st.subheader("Consultora de informacion de Latino America")
+    
+    st.subheader("A continuacion mostramos el Deploy de descripcio de el proyecto, endpoints y Dashboard")
+   
     st.write("[Nuestro Github >](https://github.com/marceloyuba)")
     st.write("[Nuestro LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
 def Developer(desarrollador):
     resultadodeveloper = Functions.Developer(desarrollador)
     return resultadodeveloper
-
-desarrollador = st.text_input("<h3>Ingrese el destino a donde quiere ir</h3>", "Brooklyn")
+st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.subheader("Consultora de informacion de Latino America")
+desarrollador = st.text_input("", "Indique su destino")
 if st.button("Consultar"):
     developer_result = Developer(desarrollador)
     st.write(developer_result)
