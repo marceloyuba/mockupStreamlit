@@ -31,8 +31,7 @@ with st.container():
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-    st.markdown('<style>p {color: white;}, font=</style>', unsafe_allow_html=True)
-    
+  
     st.markdown(""" # Strategic Data Transform""")
    
     st.subheader("Consultora de informacion de Latino America")
@@ -47,7 +46,7 @@ with st.container():
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-    st.markdown('<style>p {color: white;}, font=</style>', unsafe_allow_html=True)
+    
     
     st.title("Este sector quedaria reservado para la explicacion del proyecto")
    
@@ -116,7 +115,7 @@ def UserForGenre(Genero_Especificado):
 st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-st.markdown('<style>p {color: white;}, font=</style>', unsafe_allow_html=True)
+
 st.subheader("Calcule que vehiculo es el adecuado para su viaje")
 
 Genero_Especificado = st.text_input("", "Indique el codigo del destino")
