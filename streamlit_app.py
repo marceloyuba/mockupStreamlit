@@ -70,10 +70,8 @@ with st.container():
                 
                 #### Marcelo Yuba = Team Leader / Data Analyst
                   """)
+    st.header("Nuestro Cliente")
     st.markdown(""" 
-                Acerca de Greyhound
-
-
 #### La marca icónica de Greyhound es sinónimo de viajes asequibles de larga distancia en América del Norte con una red única.
 #### Fundada en 1914, Greyhound Lines, Inc. es el proveedor más grande de transporte interurbano en autobús, sirviendo 2300 destinos en América del Norte con una flota moderna y respetuosa con el medio ambiente. Se ha convertido en un símbolo estadounidense, brindando viajes seguros, agradables y asequibles a casi 16 millones de pasajeros cada año en los Estados Unidos y Canadá. El perro de carrera de Greyhound es una de las marcas más reconocidas a nivel mundial.
 #### Si bien Greyhound es bien conocida por su servicio de pasajeros programado regularmente, la compañía también ofrece una serie de otros servicios para sus clientes. Greyhound brinda paquetes chárter para empresas, convenciones, escuelas y otros grupos a precios competitivos.
