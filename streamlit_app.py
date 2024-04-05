@@ -15,13 +15,13 @@ column_widths = [2, 1]
 with st.container():
     col1, col2 = st.columns(column_widths)
 
-    # En la primera columna, puedes agregar texto u otros elementos si lo deseas
+    
     with col1:
-        imagen = "scr/SDTLogo-blanco.png"  # Reemplaza esto con la ruta de tu imagen
+        imagen = "scr/SDTLogo-blanco.png" 
         st.image(imagen, width=200)
-    # En la segunda columna, puedes mostrar la imagen
+    
     with col2:
-        imagen = "scr/logoGreyhound.png"  # Reemplaza esto con la ruta de tu imagen
+        imagen = "scr/logoGreyhound.png"  
         st.image(imagen, width=500)
 
 
@@ -31,6 +31,7 @@ with st.container():
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+    st.markdown('<style>p {color: white;}, font=</style>', unsafe_allow_html=True)
     
     st.title("Muestra parcial del Deploy de Strategic Data Transform")
    
@@ -45,13 +46,20 @@ with st.container():
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+    st.markdown('<style>p {color: white;}, font=</style>', unsafe_allow_html=True)
     
     st.title("Este sector quedaria reservado para la explicacion del proyecto")
    
     st.subheader("Sobre nuestra Consultora")
           
     st.subheader("Equipo de trabajo")
-    
+    st.write("""Nuestro equipo de trabajo:
+                Cristian Fontanilla = Data Engeenier 
+                Elizabeth Torres = Data Engeenier 
+                Ingrid Barrios = Data Analyst
+                Josue Mora = Data Science
+                Marcelo Yuba = Team Leader / Data Analyst 
+                """)
     st.subheader("EDA")
     
     st.subheader("ETL")
@@ -88,12 +96,12 @@ st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>p {color: white;}, font=</style>', unsafe_allow_html=True)
 st.subheader("Calcule que vehiculo es el adecuado para su viaje")
-st.write("creo que queda blanco")
+
 Genero_Especificado = st.text_input("", "Indique el codigo del destino")
 if st.button("Consultar_vehiculo"):
     Genero_Especificado = UserForGenre(Genero_Especificado)
     st.write(Genero_Especificado)
-
+st.title("")
 def main():
     st.title("Dashboard del PI2 en forma de muestra")
     st.markdown(
