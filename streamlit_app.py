@@ -10,7 +10,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-column_widths = [1, 1] 
+column_widths = [1, 2] 
 
 with st.container():
     col1, col2 = st.columns(column_widths)
@@ -18,11 +18,11 @@ with st.container():
     # En la primera columna, puedes agregar texto u otros elementos si lo deseas
     with col1:
         imagen = "scr/SDTLogo-blanco.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen, width=100)
+        st.image(imagen, width=200)
     # En la segunda columna, puedes mostrar la imagen
     with col2:
         imagen = "scr/logoGreyhound.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen, width=100)
+        st.image(imagen, width=250)
 
 # ---- HEADER SECTION ----
 with st.container():    
