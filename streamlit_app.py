@@ -22,7 +22,8 @@ with st.container():
     # En la segunda columna, puedes mostrar la imagen
     with col2:
         imagen = "scr/logoGreyhound.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen, width=400)
+        st.image(imagen, width=450)
+
 
 # ---- HEADER SECTION ----
 with st.container():    
@@ -39,7 +40,33 @@ with st.container():
     st.write("[Nuestro Github >](https://github.com/marceloyuba)")
     st.write("[Nuestro LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
+with st.container():    
+    st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
+    st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
+    st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+    
+    st.title("Este sector quedaria reservado para la explicacion del proyecto")
+   
+    st.subheader("Sobre nuestra Consultora")
+          
+    st.subheader("Equipo de trabajo")
+    
+    st.subheader("EDA")
+    
+    st.subheader("ETL")
+    
+    st.subheader("Analisis de los datos")
+    
+    st.subheader("Stack Tecnologico")
 
+with st.container():    
+    st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
+    st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
+    st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+    
+    st.title("Mostramos nuestros resultados")
+   
+    
 def Developer(desarrollador):
     resultadodeveloper = Functions.Developer(desarrollador)
     return resultadodeveloper
