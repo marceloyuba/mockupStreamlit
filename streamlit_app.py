@@ -9,9 +9,6 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 local_css("style/style.css")
-
-image_url = "https://github.com/marceloyuba/PorfolioIngles/blob/main/scr/guarda.png?raw=true"
-image = st.image(image_url, caption="Descripción opcional de la imagen")
     
 
 # ---- HEADER SECTION ----
@@ -59,7 +56,7 @@ page_bg_img = f"""
 <style>
 
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://github.com/marceloyuba/PorfolioIngles/blob/main/scr/fondoTaxi.png?raw=true");
+background-image: url("https://github.com/marceloyuba/PorfolioIngles/blob/main/scr/fondoTaxi-2.png?raw=true");
 background-position: top left;
 background-repeat: no-repeat;
 background-attachment: fixed;
