@@ -1,6 +1,7 @@
 import streamlit as st
 import Functions
 
+
 st.set_page_config(page_icon="scr/fondo.jpg", layout="wide")
            
 def local_css(file_name):
@@ -8,6 +9,13 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 local_css("style/style.css")
+
+with st.container():
+    image_column, image_column = st.columns((1, 2))
+    with image_column:
+        st.image("scr/taxis.png")
+    with image_column:
+        st.image("scr/taxis.png")
 
 # ---- HEADER SECTION ----
 with st.container():    
