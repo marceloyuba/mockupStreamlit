@@ -22,7 +22,8 @@ with st.container():
     # En la segunda columna, puedes mostrar la imagen
     with col2:
         imagen = "scr/logoGreyhound.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen, width=450)
+        st.image(imagen, width=500)
+        
 
 
 # ---- HEADER SECTION ----
