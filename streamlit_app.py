@@ -35,7 +35,6 @@ desarrollador = st.text_input("", "Indique el codigo de la region")
 if st.button("Consultar"):
     developer_result = Developer(desarrollador)
     st.write(developer_result)
-
 def recomendacion_usuario(Id_Usuario):
     resultadotop_game = Functions.recomendacion_usuario(Id_Usuario)
     return resultadotop_game
@@ -47,6 +46,7 @@ Id_Usuario = st.text_input("", "Indique el codigo de la region")
 if st.button("Consultar Modelo"):
     recomendacion_result = recomendacion_usuario(Id_Usuario)
     st.write(recomendacion_result)
+
 
 def UserForGenre(Genero_Especificado):
     resultadoReview = Functions.UserForGenre(Genero_Especificado)
