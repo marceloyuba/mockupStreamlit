@@ -59,11 +59,12 @@ with st.container():
                 """)    
     st.header("Equipo de trabajo")
     st.write("##")
-    st.subheader("Cristian Fontanilla = Data Engeenier")
-    st.subheader( "Elizabeth Torres = Data Engeenier" )
-    st.subheader( "Ingrid Barrios = Data Analyst")
-    st.subheader( "Josue Mora = Data Science")
-    st.subheader( "Marcelo Yuba = Team Leader / Data Analyst")
+    st.markdown(""" #### Cristian Fontanilla = Data Engeenier
+                  #### Elizabeth Torres = Data Engeenier
+                  #### Ingrid Barrios = Data Analyst
+                  #### Josue Mora = Data Science
+                  #### Marcelo Yuba = Team Leader / Data Analyst
+                  """)
                 
     
     
