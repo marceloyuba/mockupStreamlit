@@ -11,7 +11,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 column_widths = [2, 1] 
-
+st.title("")
 with st.container():
     col1, col2 = st.columns(column_widths)
 
@@ -94,7 +94,8 @@ with st.container():
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
     
-    st.title("Mostramos nuestros resultados")
+    st.markdown(""" 
+                # Mostramos nuestros resultados""")
    
     
 def Developer(desarrollador):
