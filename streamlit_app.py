@@ -11,7 +11,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 with st.container():
-    image_column, image_column = st.columns((1, 1))
+    image_column, image_column = st.columns((2, 2))
     with image_column:
         st.image("scr/guarda.png")
     
