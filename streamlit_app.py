@@ -64,7 +64,28 @@ if st.button("Consultar_vehiculo"):
     Genero_Especificado = UserForGenre(Genero_Especificado)
     st.write(Genero_Especificado)
 
+def main():
+    st.title("Localizador de Estaciones de Combustible Alternativo")
 
+    st.write("A continuación se muestra el localizador de estaciones de combustible alternativo.")
+
+    st.markdown('<iframe width="1240" height="800" align = "center" src="https://app.powerbi.com/view?r=eyJrIjoiM2NjNDA0YmItMmRhZC00ZDhlLWFmOWYtZTZiMWMxYWY3ODAzIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
+    st.markdown('<iframe width="1240" height="800" align = "center" src="https://afdc.energy.gov/fuels/ethanol_locations.html#/find/nearest?fuel=E85&location=New%20York" frameborder="0" allowFullScreen="true"></iframe>', unsafe_allow_html=True)
+     # Insertar el iframe con el script proporcionado
+    st.markdown(
+        """
+        
+        <script type="text/javascript">
+            window.afdcStationsOptions = {"country":"all","localeCountry":"US","path":"/find/nearest","query":{"fuel":["E85"],"ev_levels":["2"]}};
+        </script>
+        <script async defer src="https://widgets.nrel.gov/afdc/station-locator/assets/embed.js"></script>
+        
+        """,
+        unsafe_allow_html=True
+    )
+
+if __name__ == "__main__":
+    main()
 
 page_bg_img = f"""
 <style>
