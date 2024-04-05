@@ -35,6 +35,7 @@ desarrollador = st.text_input("", "Indique el codigo de la region")
 if st.button("Consultar"):
     developer_result = Developer(desarrollador)
     st.write(developer_result)
+    
 def recomendacion_usuario(Id_Usuario):
     resultadotop_game = Functions.recomendacion_usuario(Id_Usuario)
     return resultadotop_game
@@ -43,7 +44,7 @@ st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.subheader("Consulte el nivel de Co2 en su zona")
 Id_Usuario = st.text_input("", "Indique el codigo de la region")
-if st.button("Consultar Modelo"):
+if st.button("Consultar_Modelo"):
     recomendacion_result = recomendacion_usuario(Id_Usuario)
     st.write(recomendacion_result)
 
