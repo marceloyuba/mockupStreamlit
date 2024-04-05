@@ -30,15 +30,35 @@ def Developer(desarrollador):
 st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-st.subheader("Consultora de informacion de Latino America")
-desarrollador = st.text_input("", "Indique su destino")
+st.subheader("Consulta de puntos mas solicitados en la ciudad")
+desarrollador = st.text_input("", "Indique el codigo de la region")
 if st.button("Consultar"):
     developer_result = Developer(desarrollador)
     st.write(developer_result)
 
+def Developer(desarrollador):
+    resultadodeveloper = Functions.Developer(desarrollador)
+    return resultadodeveloper
+st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.subheader("Consulte el nivel de Co2 en su zona")
+desarrollador = st.text_input("", "Indique el codigo de la region")
+if st.button("Consultar"):
+    developer_result = Developer(desarrollador)
+    st.write(developer_result)
 
-
-
+def Developer(desarrollador):
+    resultadodeveloper = Functions.Developer(desarrollador)
+    return resultadodeveloper
+st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.subheader("Calcule que vehiculo es el adecuado para su viaje")
+desarrollador = st.text_input("", "Indique el codigo del destino")
+if st.button("Consultar"):
+    developer_result = Developer(desarrollador)
+    st.write(developer_result)
 
 
 
