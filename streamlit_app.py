@@ -2,7 +2,7 @@ import streamlit as st
 import Functions
 
 
-st.set_page_config(page_title="Strategic Data Transform", page_icon="scr/SDTLogo-png", layout="wide")
+st.set_page_config(page_title="Strategic Data Transform", page_icon="scr/SDTLogo-corto", layout="wide")
            
 def local_css(file_name):
     with open(file_name) as f:
