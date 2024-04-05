@@ -51,7 +51,7 @@ with st.container():
     st.title("Este sector quedaria reservado para la explicacion del proyecto")
    
     st.header("Sobre nuestra Consultora")
-    st.subheader("""Strategic Data Transform es una consultora de información, para generar estrategias de negocios, basado en datos.
+    st.markdown("""Strategic Data Transform es una consultora de información, para generar estrategias de negocios, basado en datos.
                 Se basa en un tipo de negocio B2B, como empresa, ofrecer servicios a otras empresas, que estén dentro de la esfera del IT, 
                 tanto como empresas no relacionadas a la actividad y tengan necesidades de analizar sus datos y que permita poder desarrollar
                 mejor sus actividades, teniendo conciencia de donde se encuentran las fallas en relación con cómo administran su información 
