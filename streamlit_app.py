@@ -14,8 +14,7 @@ with st.container():
     image_column, image_column = st.columns((2, 2))
     with image_column:
         st.image("scr/taxis.png")
-    with image_column:
-        st.image("scr/taxis.png")
+    
 
 # ---- HEADER SECTION ----
 with st.container():    
