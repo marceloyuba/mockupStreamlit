@@ -52,13 +52,15 @@ with st.container():
    
     st.subheader("Sobre nuestra Consultora")
           
-    st.subheader("Equipo de trabajo")
-    st.write("""Nuestro equipo de trabajo:
-                Cristian Fontanilla = Data Engeenier 
-                Elizabeth Torres = Data Engeenier 
-                Ingrid Barrios = Data Analyst
-                Josue Mora = Data Science
-                Marcelo Yuba = Team Leader / Data Analyst 
+    st.header("Equipo de trabajo")
+    st.subheader("""                
+                <ul>
+                    <li>Cristian Fontanilla = Data Engeenier</li>
+                    <li>Elizabeth Torres = Data Engeenier</li>
+                    <li>Ingrid Barrios = Data Analyst</li>
+                    <li>Josue Mora = Data Science</li>
+                    <li>Marcelo Yuba = Team Leader / Data Analyst</li>
+                </ul>
                 """)
     st.subheader("EDA")
     
