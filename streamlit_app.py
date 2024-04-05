@@ -1,4 +1,5 @@
 import streamlit as st
+import Functions
 
 st.set_page_config(page_icon="scr/fondo.jpg", layout="wide")
            
@@ -20,10 +21,26 @@ with st.container():
     st.write("[Mi Github >](https://github.com/marceloyuba)")
     st.write("[Mi LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
+def Developer(desarrollador):
+    resultadodeveloper = Functions.Developer(desarrollador)
+    return resultadodeveloper
 
+st.markdown(""" 
+    <html>
+        <body>
+            <h2>INSTRUCCIONES</h2>
+            <p>            
+                Ingrese el destino a donde quiere ir
+                 
+            </p>      
+        </body>
+    </html>
+    """, unsafe_allow_html=True)
 
-
-
+desarrollador = st.text_input("Ingrese el destino a donde quiere ir", "Brooklyn")
+if st.button("Consultar"):
+    developer_result = Developer(desarrollador)
+    st.write(developer_result)
 
 
 
