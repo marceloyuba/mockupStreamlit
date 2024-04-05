@@ -23,7 +23,7 @@ with st.container():
     with col2:
         imagen = "scr/logoGreyhound.png"  # Reemplaza esto con la ruta de tu imagen
         st.image(imagen, width=500)
-        
+
 
 
 # ---- HEADER SECTION ----
@@ -86,7 +86,9 @@ def UserForGenre(Genero_Especificado):
 st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+st.markdown('<style>p {color: white;}, font=</style>', unsafe_allow_html=True)
 st.subheader("Calcule que vehiculo es el adecuado para su viaje")
+st.write("creo que queda blanco")
 Genero_Especificado = st.text_input("", "Indique el codigo del destino")
 if st.button("Consultar_vehiculo"):
     Genero_Especificado = UserForGenre(Genero_Especificado)
