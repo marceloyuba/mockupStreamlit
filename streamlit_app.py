@@ -70,7 +70,20 @@ with st.container():
                 
                 #### Marcelo Yuba = Team Leader / Data Analyst
                   """)
-                
+    st.markdown(""" 
+                Acerca de Greyhound
+
+
+#### La marca icónica de Greyhound es sinónimo de viajes asequibles de larga distancia en América del Norte con una red única.
+#### Fundada en 1914, Greyhound Lines, Inc. es el proveedor más grande de transporte interurbano en autobús, sirviendo 2300 destinos en América del Norte con una flota moderna y respetuosa con el medio ambiente. Se ha convertido en un símbolo estadounidense, brindando viajes seguros, agradables y asequibles a casi 16 millones de pasajeros cada año en los Estados Unidos y Canadá. El perro de carrera de Greyhound es una de las marcas más reconocidas a nivel mundial.
+####Si bien Greyhound es bien conocida por su servicio de pasajeros programado regularmente, la compañía también ofrece una serie de otros servicios para sus clientes. Greyhound brinda paquetes chárter para empresas, convenciones, escuelas y otros grupos a precios competitivos.
+#### En 2010 la compañía lanzó su servicio premium de ciudad a ciudad, Greyhound Express, y desde entonces expandió rápidamente el popular servicio a más de 135 mercados en América del Norte. También opera Greyhound Connect, un servicio que conecta comunidades rurales con destinos de Greyhound más grandes en los Estados Unidos.
+#### Además, Greyhound tiene alianza con varias compañías de autobuses independientes en los Estados Unidos. Esas empresas brindan servicios complementarios a los horarios existentes de Greyhound y llegan a muchas de las ciudades más pequeñas en el sistema de rutas nacionales de Greyhound.
+#### Los pasajeros de Amtrak usan Greyhound para hacer conexiones a ciudades que no cuentan con el servicio ferroviario Thruway de Amtrak al comprar un boleto para la conexión de autobús de Amtrak junto con la compra de su boleto de tren. Los pasajeros también pueden comprar un boleto de autobús directamente con Greyhound.
+#### Flix SE adquirió Greyhound Lines Inc. el 21 de octubre de 2021. Habiendo estado presente en el mercado norteamericano con sus servicios FlixBus desde 2018, la compra de Greyhound reunió a dos líderes en la industria de autobuses interurbanos, combinando la tecnología global innovadora de FlixBus y la experiencia en movilidad compartida con la presencia y experiencia icónicas a nivel nacional de Greyhound. Desde julio de 2022, la entidad con sede en Dallas Flix North America, Inc. ("Flix North America") supervisa las operaciones de Greyhound y FlixBus en América del Norte.
+#### Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
+#### Desde la expansión en 2021, Nuestro cliente analiza nuevos mercados fuera del transporte de buses, por eso nos encomendó analizar si es viable ingresar al negocio de los viajes en automóviles, para eso usamos como marco de referencia los transportes ya existentes y posibles competidores.
+                  """)        
     
     
     st.subheader("ETL")
