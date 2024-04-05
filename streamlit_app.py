@@ -42,7 +42,8 @@ with st.container():
     st.write("[Nuestro Github >](https://github.com/marceloyuba)")
     st.write("[Nuestro LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
-with st.container():    
+with st.container():
+    st.markdown('<style>h4{color: white;}, font=</style>', unsafe_allow_html=True)    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
@@ -52,9 +53,9 @@ with st.container():
    
     st.header("Sobre nuestra Consultora")
     st.markdown("""
-                ### Strategic Data Transform es una consultora de información, para generar estrategias de negocios, basado en datos. Se basa en un tipo de negocio B2B, como empresa, ofrecer servicios a otras empresas, que estén dentro de la esfera del IT, tanto como empresas no relacionadas a la actividad y tengan necesidades de analizar sus datos y que permita poder desarrollar mejor sus actividades, teniendo conciencia de donde se encuentran las fallas en relación con cómo administran su información de negocio. 
+                #### Strategic Data Transform es una consultora de información, para generar estrategias de negocios, basado en datos. Se basa en un tipo de negocio B2B, como empresa, ofrecer servicios a otras empresas, que estén dentro de la esfera del IT, tanto como empresas no relacionadas a la actividad y tengan necesidades de analizar sus datos y que permita poder desarrollar mejor sus actividades, teniendo conciencia de donde se encuentran las fallas en relación con cómo administran su información de negocio. 
 
-                ### Nuestra propuesta de valor: Dashboards de alto impacto: Dados los conocimientos técnicos, pero a su vez visuales, gracias a técnicas de diseño gráfico y publicidad, la idea es hacer dashboards de un gran impacto visual como a la vez completamente funcionales, interactivos e intuitivos para el usuario. En la actualidad se muestran muchas métricas y gráficos de manera apilada, sin dejar espacios libres, haciéndolos densos para ser leídos e interpretados. Nuestra idea es usar gráficos que sean más originales, respetando su imagen corporativa, pero un poco más desafiantes que paneles convencionales, que simplemente sean funcionales.
+                #### Nuestra propuesta de valor: Dashboards de alto impacto: Dados los conocimientos técnicos, pero a su vez visuales, gracias a técnicas de diseño gráfico y publicidad, la idea es hacer dashboards de un gran impacto visual como a la vez completamente funcionales, interactivos e intuitivos para el usuario. En la actualidad se muestran muchas métricas y gráficos de manera apilada, sin dejar espacios libres, haciéndolos densos para ser leídos e interpretados. Nuestra idea es usar gráficos que sean más originales, respetando su imagen corporativa, pero un poco más desafiantes que paneles convencionales, que simplemente sean funcionales.
                 """)    
     st.header("Equipo de trabajo")
     st.write("##")
