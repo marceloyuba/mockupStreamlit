@@ -36,27 +36,27 @@ if st.button("Consultar"):
     developer_result = Developer(desarrollador)
     st.write(developer_result)
 
-def Developer(desarrollador):
-    resultadodeveloper = Functions.Developer(desarrollador)
-    return resultadodeveloper
+def recomendacion_usuario(Id_Usuario):
+    resultadotop_game = Functions.recomendacion_usuario(Id_Usuario)
+    return resultadotop_game
 st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.subheader("Consulte el nivel de Co2 en su zona")
 desarrollador = st.text_input("", "Indique el codigo de la region")
-if st.button("Consultar"):
+if st.button("Consultar_Co2"):
     developer_result = Developer(desarrollador)
     st.write(developer_result)
 
-def Developer(desarrollador):
-    resultadodeveloper = Functions.Developer(desarrollador)
-    return resultadodeveloper
+def UserForGenre(Genero_Especificado):
+    resultadoReview = Functions.UserForGenre(Genero_Especificado)
+    return resultadoReview
 st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.subheader("Calcule que vehiculo es el adecuado para su viaje")
 desarrollador = st.text_input("", "Indique el codigo del destino")
-if st.button("Consultar"):
+if st.button("Consultar_vehiculo"):
     developer_result = Developer(desarrollador)
     st.write(developer_result)
 
