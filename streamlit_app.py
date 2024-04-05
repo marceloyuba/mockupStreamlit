@@ -33,7 +33,7 @@ with st.container():
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>p {color: white;}, font=</style>', unsafe_allow_html=True)
     
-    st.title("Muestra parcial del Deploy de Strategic Data Transform")
+    st.markdown(""" # Strategic Data Transform""")
    
     st.subheader("Consultora de informacion de Latino America")
     
