@@ -2,7 +2,7 @@ import streamlit as st
 import Functions
 
 
-st.set_page_config(page_icon="scr/fondo.jpg", layout="wide")
+st.set_page_config(page_title="Strategic Data Transform", page_icon="scr/SDTLogo-png", layout="wide")
            
 def local_css(file_name):
     with open(file_name) as f:
@@ -22,7 +22,7 @@ with st.container():
     # En la segunda columna, puedes mostrar la imagen
     with col2:
         imagen = "scr/logoGreyhound.png"  # Reemplaza esto con la ruta de tu imagen
-        st.image(imagen, width=300)
+        st.image(imagen, width=350)
 
 # ---- HEADER SECTION ----
 with st.container():    
