@@ -9,7 +9,23 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 local_css("style/style.css")
-    
+
+column_widths = [1, 1] 
+
+with st.container():
+    st.write("---")
+    st.title("Que es lo que hago")
+    st.write("##")
+    col1, col2 = st.columns(column_widths)
+
+    # En la primera columna, puedes agregar texto u otros elementos si lo deseas
+    with col1:
+        imagen = "scr/SDTLogo-blanco.png"  # Reemplaza esto con la ruta de tu imagen
+        st.image(imagen, width=400)
+    # En la segunda columna, puedes mostrar la imagen
+    with col2:
+        imagen = "scr/logoGreyhound.png"  # Reemplaza esto con la ruta de tu imagen
+        st.image(imagen, width=400)
 
 # ---- HEADER SECTION ----
 with st.container():    
@@ -25,6 +41,7 @@ with st.container():
    
     st.write("[Nuestro Github >](https://github.com/marceloyuba)")
     st.write("[Nuestro LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
+
 
 def Developer(desarrollador):
     resultadodeveloper = Functions.Developer(desarrollador)
@@ -56,7 +73,7 @@ page_bg_img = f"""
 <style>
 
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/fondoTaxi-2.png?raw=true");
+background-image: url("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/fondoTaxi.png?raw=true");
 background-position: top left;
 background-repeat: no-repeat;
 background-attachment: fixed;
