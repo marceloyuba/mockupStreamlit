@@ -43,10 +43,10 @@ st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.subheader("Consulte el nivel de Co2 en su zona")
-desarrollador = st.text_input("", "Indique el codigo de la region")
-if st.button("Consultar_Co2"):
-    developer_result = Developer(desarrollador)
-    st.write(developer_result)
+Id_Usuario = st.text_input("", "Indique el codigo de la region")
+if st.button("Consultar Modelo"):
+    recomendacion_result = recomendacion_usuario(Id_Usuario)
+    st.write(recomendacion_result)
 
 def UserForGenre(Genero_Especificado):
     resultadoReview = Functions.UserForGenre(Genero_Especificado)
@@ -55,10 +55,10 @@ st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.subheader("Calcule que vehiculo es el adecuado para su viaje")
-desarrollador = st.text_input("", "Indique el codigo del destino")
+Genero_Especificado = st.text_input("", "Indique el codigo del destino")
 if st.button("Consultar_vehiculo"):
-    developer_result = Developer(desarrollador)
-    st.write(developer_result)
+    Genero_Especificado = UserForGenre(Genero_Especificado)
+    st.write(Genero_Especificado)
 
 
 
