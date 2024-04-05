@@ -10,16 +10,8 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-image = st.image("scr/guarda.png")
-
-# Aplica estilos CSS para centrar la imagen
-image.markdown(
-    f'<style>div.Widget.row-widget.stImage > div{{
-        width: 100%;
-        text-align: center;
-    }}</style>',
-    unsafe_allow_html=True,
-)
+image_url = "https://github.com/marceloyuba/PorfolioIngles/blob/main/scr/guarda.png?raw=true"
+image = st.image(image_url, caption="Descripción opcional de la imagen")
     
 
 # ---- HEADER SECTION ----
