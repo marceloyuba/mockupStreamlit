@@ -83,11 +83,10 @@ with st.container():
                   """)        
     
     
-    st.subheader("ETL")
+    st.subheader("Datos relevantes del proyecto")
+    st.write("[Nuestros datos >](https://dashboardsiniestrosviales.observablehq.cloud/documentaci-n/)")
     
-    st.subheader("Analisis de los datos")
-    
-    st.subheader("Stack Tecnologico")
+
 
 with st.container():    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
