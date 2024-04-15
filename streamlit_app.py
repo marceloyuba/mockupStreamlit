@@ -31,6 +31,7 @@ with st.container():
     st.subheader("[Nuestro LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
 with st.container():
+    st.markdown('<style>a{color: white;}, font=</style>', unsafe_allow_html=True)  
     st.markdown('<style>h4{color: white;}, font=</style>', unsafe_allow_html=True)    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
