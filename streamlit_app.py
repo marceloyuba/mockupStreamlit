@@ -10,7 +10,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/fondoTaxi.png?raw=true")
+st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logos.png?raw=true")
 
 
 
