@@ -16,7 +16,8 @@ st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logos.png
 
 
 # ---- HEADER SECTION ----
-with st.container():    
+with st.container():
+    st.markdown('<style>a {color: white;}, font=</style>', unsafe_allow_html=True)    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
