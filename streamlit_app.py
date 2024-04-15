@@ -27,8 +27,8 @@ with st.container():
     
     st.subheader("A continuacion mostramos el Deploy de descripcio de el proyecto, endpoints y Dashboard")
    
-    st.write("[Nuestro Github >](https://github.com/marceloyuba)")
-    st.write("[Nuestro LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
+    st.subheader("[Nuestro Github >](https://github.com/marceloyuba)")
+    st.subheader("[Nuestro LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
 
 with st.container():
     st.markdown('<style>h4{color: white;}, font=</style>', unsafe_allow_html=True)    
