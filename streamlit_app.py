@@ -10,19 +10,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-column_widths = [2, 1] 
-st.title("")
-with st.container():
-    col1, col2 = st.columns(column_widths)
-
-    
-    with col1:
-        imagen = "scr/SDTLogo-blanco.png" 
-        st.image(imagen, width=200)
-    
-    with col2:
-        imagen = "scr/logoGreyhound.png"  
-        st.image(imagen, width=500)
+st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/fondoTaxi.png?raw=true")
 
 
 
