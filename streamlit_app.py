@@ -9,6 +9,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 local_css("style/style.css")
+st.title("")
 
 st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logos.png?raw=true")
 
@@ -36,7 +37,7 @@ with st.container():
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
     
     
-    st.title("Este sector quedaria reservado para la explicacion del proyecto")
+    st.header("Este sector quedaria reservado para la explicacion del proyecto")
    
     st.header("Sobre Nosotros")
     st.markdown("""
