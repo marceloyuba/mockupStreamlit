@@ -11,11 +11,9 @@ def local_css(file_name):
 local_css("style/style.css")
 with st.container():
     
-    st.markdown("<div style='text-align:center'><img src='scr/titulo.png'></div>",
-    unsafe_allow_html=True
-)
+    st.image("scr/titulo.png",use_column_width=True, output_format='auto')
     st.title("")
-    st.image("scr/logo.png", output_format='auto')
+    st.image("scr/logo.png", use_column_width=True, output_format='auto')
 
   
 with st.container():
