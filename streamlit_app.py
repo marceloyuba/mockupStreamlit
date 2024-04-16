@@ -44,7 +44,7 @@ with st.container():
     
     with col2:
         imagen = "scr/cliente.png"  
-        st.image(imagen, width=500)    
+        st.image(imagen, width=500, use_column_width=True, output_format='auto')    
            
 
 st.title("")
