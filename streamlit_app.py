@@ -12,24 +12,8 @@ local_css("style/style.css")
 with st.container():
     st.title("Analisis estrategico de inserción de mercado")
     st.title("")
-
     st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logos.png?raw=true")
 
-# ---- HEADER SECTION ----
-with st.container():
-    st.markdown(
-    """
-    <style>
-        a {
-            color: red; /* Cambia el color del texto del enlace a rojo */
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-   )  
-    st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
-    st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
-    st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
   
 with st.container():
     st.markdown(
