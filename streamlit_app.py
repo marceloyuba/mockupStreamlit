@@ -11,9 +11,9 @@ def local_css(file_name):
 local_css("style/style.css")
 with st.container():
     
-    st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/titulo.png?raw=true")
+    st.image("scr/titulo.png")
     st.title("")
-    st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logo.png?raw=true")
+    st.image("scr/logo.png")
 
   
 with st.container():
@@ -64,20 +64,7 @@ with st.container():
     
     st.subheader("Datos relevantes del proyecto")
     st.write("[Nuestros datos >](https://dashboardsiniestrosviales.observablehq.cloud/documentaci-n/)")
-    
-    st.header("Equipo de trabajo")
-    st.write("##")
-    st.markdown(""" 
-                #### Cristian Fontanilla = Data Engeenier
-                
-                #### Elizabeth Torres = Data Engeenier
-                
-                #### Ingrid Barrios = Data Analyst
-                
-                #### Josue Mora = Data Science
-                
-                #### Marcelo Yuba = Team Leader / Data Analyst
-                  """)
+       
 
 with st.container():    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
@@ -127,6 +114,20 @@ def main():
 
 if __name__ == "__main__":
     main()
+with st.container():
+    st.header("Equipo de trabajo")
+    st.write("##")
+    st.markdown(""" 
+                #### Cristian Fontanilla = Data Engeenier
+                
+                #### Elizabeth Torres = Data Engeenier
+                
+                #### Ingrid Barrios = Data Analyst
+                
+                #### Josue Mora = Data Science
+                
+                #### Marcelo Yuba = Team Leader / Data Analyst
+                  """)
 
 page_bg_img = f"""
 <style>
