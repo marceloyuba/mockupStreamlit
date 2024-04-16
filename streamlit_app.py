@@ -11,9 +11,9 @@ def local_css(file_name):
 local_css("style/style.css")
 with st.container():
     
-    st.image("scr/titulo.png")
+    st.image("scr/titulo.png",use_column_width=True, output_format='auto')
     st.title("")
-    st.image("scr/logo.png")
+    st.image("scr/logo.png", use_column_width=True, output_format='auto')
 
   
 with st.container():
