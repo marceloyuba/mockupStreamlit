@@ -13,6 +13,7 @@ st.title("")
 
 st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logos.png?raw=true")
 
+st.title("Analisis estrategico de inserción de mercado")
 
 
 # ---- HEADER SECTION ----
@@ -31,15 +32,6 @@ with st.container():
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
   
-    st.markdown(""" # Strategic Data Transform""")
-   
-    st.subheader("Consultora de informacion de Latino America")
-    
-    st.subheader("A continuacion mostramos el Deploy de descripcio de el proyecto, endpoints y Dashboard")
-   
-    st.subheader("[Nuestro Github >](https://github.com/marceloyuba)")
-    st.subheader("[Nuestro LinkedIn >](https://www.linkedin.com/in/marcelo-yuba-b9a39827b/)")
-
 with st.container():
     st.markdown(
     """
