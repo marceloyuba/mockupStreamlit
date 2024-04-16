@@ -10,7 +10,8 @@ def local_css(file_name):
         
 local_css("style/style.css")
 with st.container():
-    st.title("Analisis estrategico de inserción de mercado")
+    st.title("")
+    st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/titulo.png?raw=true")
     st.title("")
     st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logos.png?raw=true")
 
