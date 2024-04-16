@@ -30,16 +30,29 @@ with st.container():
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
+    column_widths = [2, 1]
+with st.container():
      
+    col1, col2 = st.columns(column_widths)
+    
+    
+    with col1:
+        st.header("Nuestro Cliente")
+        st.markdown(""" 
+                #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
+                  """) 
+    
+    with col2:
+        imagen = "scr/mision.png"  
+        st.image(imagen, width=500)    
     st.header("Nuestro Cliente")
     st.markdown(""" 
                 #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
                   """)       
-column_widths = [2, 1] 
+
 st.title("")
 with st.container():
     col1, col2 = st.columns(column_widths)
-
     
     with col1:
         st.title("Nuestra mision")        
