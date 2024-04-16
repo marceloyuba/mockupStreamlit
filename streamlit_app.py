@@ -9,11 +9,11 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 local_css("style/style.css")
-st.title("")
+st.title("Analisis estrategico de inserción de mercado")
 
 st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logos.png?raw=true")
 
-st.title("Analisis estrategico de inserción de mercado")
+
 
 
 # ---- HEADER SECTION ----
