@@ -55,16 +55,19 @@ with st.container():
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-    
-    
-    st.header("Este sector quedaria reservado para la explicacion del proyecto")
-   
-    st.header("Sobre Nosotros")
+     
+    st.header("Nuestro Cliente")
+    st.markdown(""" 
+                #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
+                  """)       
+     
+    st.header("Nuestra mision")
     st.markdown("""
-                #### Strategic Data Transform es una consultora de información, para generar estrategias de negocios, basado en datos. Se basa en un tipo de negocio B2B, como empresa, ofrecer servicios a otras empresas, que estén dentro de la esfera del IT, tanto como empresas no relacionadas a la actividad y tengan necesidades de analizar sus datos y que permita poder desarrollar mejor sus actividades, teniendo conciencia de donde se encuentran las fallas en relación con cómo administran su información de negocio. 
-
-                #### Nuestra propuesta de valor: Dashboards de alto impacto: Dados los conocimientos técnicos, pero a su vez visuales, gracias a técnicas de diseño gráfico y publicidad, la idea es hacer dashboards de un gran impacto visual como a la vez completamente funcionales, interactivos e intuitivos para el usuario. En la actualidad se muestran muchas métricas y gráficos de manera apilada, sin dejar espacios libres, haciéndolos densos para ser leídos e interpretados. Nuestra idea es usar gráficos que sean más originales, respetando su imagen corporativa, pero un poco más desafiantes que paneles convencionales, que simplemente sean funcionales.
-                """)    
+                #### Desde la expansión en 2021, Nuestro cliente analiza nuevos mercados fuera del transporte de buses, por eso nos encomendó analizar la inserción al negocio de los viajes en automóviles, analizando a su competidores directos (Taxis, Uber, Lyft) y comenzando por la ciudad de Nueva York, ya que la misma tiene una de las redes mas complejas de transporte en todo el pais, nuestro trabajo es analizar si es viable el ingreso al sistema cumpliendo con las regulaciones impuestas por el gobierno respecto a tener una ciudad libre de emisiones contaminantes""") 
+    
+    st.subheader("Datos relevantes del proyecto")
+    st.write("[Nuestros datos >](https://dashboardsiniestrosviales.observablehq.cloud/documentaci-n/)")
+    
     st.header("Equipo de trabajo")
     st.write("##")
     st.markdown(""" 
@@ -78,24 +81,6 @@ with st.container():
                 
                 #### Marcelo Yuba = Team Leader / Data Analyst
                   """)
-    st.header("Nuestro Cliente")
-    st.markdown(""" 
-#### La marca icónica de Greyhound es sinónimo de viajes asequibles de larga distancia en América del Norte con una red única.
-#### Fundada en 1914, Greyhound Lines, Inc. es el proveedor más grande de transporte interurbano en autobús, sirviendo 2300 destinos en América del Norte con una flota moderna y respetuosa con el medio ambiente. Se ha convertido en un símbolo estadounidense, brindando viajes seguros, agradables y asequibles a casi 16 millones de pasajeros cada año en los Estados Unidos y Canadá. El perro de carrera de Greyhound es una de las marcas más reconocidas a nivel mundial.
-#### Si bien Greyhound es bien conocida por su servicio de pasajeros programado regularmente, la compañía también ofrece una serie de otros servicios para sus clientes. Greyhound brinda paquetes chárter para empresas, convenciones, escuelas y otros grupos a precios competitivos.
-#### En 2010 la compañía lanzó su servicio premium de ciudad a ciudad, Greyhound Express, y desde entonces expandió rápidamente el popular servicio a más de 135 mercados en América del Norte. También opera Greyhound Connect, un servicio que conecta comunidades rurales con destinos de Greyhound más grandes en los Estados Unidos.
-#### Además, Greyhound tiene alianza con varias compañías de autobuses independientes en los Estados Unidos. Esas empresas brindan servicios complementarios a los horarios existentes de Greyhound y llegan a muchas de las ciudades más pequeñas en el sistema de rutas nacionales de Greyhound.
-#### Los pasajeros de Amtrak usan Greyhound para hacer conexiones a ciudades que no cuentan con el servicio ferroviario Thruway de Amtrak al comprar un boleto para la conexión de autobús de Amtrak junto con la compra de su boleto de tren. Los pasajeros también pueden comprar un boleto de autobús directamente con Greyhound.
-#### Flix SE adquirió Greyhound Lines Inc. el 21 de octubre de 2021. Habiendo estado presente en el mercado norteamericano con sus servicios FlixBus desde 2018, la compra de Greyhound reunió a dos líderes en la industria de autobuses interurbanos, combinando la tecnología global innovadora de FlixBus y la experiencia en movilidad compartida con la presencia y experiencia icónicas a nivel nacional de Greyhound. Desde julio de 2022, la entidad con sede en Dallas Flix North America, Inc. ("Flix North America") supervisa las operaciones de Greyhound y FlixBus en América del Norte.
-#### Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
-#### Desde la expansión en 2021, Nuestro cliente analiza nuevos mercados fuera del transporte de buses, por eso nos encomendó analizar si es viable ingresar al negocio de los viajes en automóviles, para eso usamos como marco de referencia los transportes ya existentes y posibles competidores.
-                  """)        
-    
-    
-    st.subheader("Datos relevantes del proyecto")
-    st.write("[Nuestros datos >](https://dashboardsiniestrosviales.observablehq.cloud/documentaci-n/)")
-    
-
 
 with st.container():    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
