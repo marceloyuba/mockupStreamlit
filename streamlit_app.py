@@ -59,7 +59,7 @@ with st.container():
     
     with col2:
         imagen = "scr/mision.png"  
-        st.image(imagen, width=500)
+        st.image(imagen, width=500, use_column_width=True, output_format='auto')
     
     st.subheader("Datos relevantes del proyecto")
     st.write("[Nuestros datos >](https://dashboardsiniestrosviales.observablehq.cloud/documentaci-n/)")
