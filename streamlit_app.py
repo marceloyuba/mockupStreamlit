@@ -13,7 +13,7 @@ with st.container():
     st.title("")
     st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/titulo.png?raw=true")
     st.title("")
-    st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logos.png?raw=true")
+    st.image("https://github.com/marceloyuba/mockupStreamlit/blob/main/scr/logo.png?raw=true")
 
   
 with st.container():
