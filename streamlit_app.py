@@ -9,8 +9,9 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 local_css("style/style.css")
+st.title("")
 with st.container():
-    st.title("")
+    
     st.image("scr/titulo.png",use_column_width=True, output_format='auto')
     st.title("")
     st.image("scr/logo.png", use_column_width=True, output_format='auto')
