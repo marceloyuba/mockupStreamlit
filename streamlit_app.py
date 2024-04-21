@@ -10,7 +10,7 @@ def local_css(file_name):
         
 local_css("style/style.css")
 with st.container():
-    
+    st.title("")
     st.image("scr/titulo.png",use_column_width=True, output_format='auto')
     st.title("")
     st.image("scr/logo.png", use_column_width=True, output_format='auto')
