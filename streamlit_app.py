@@ -102,6 +102,7 @@ if st.button("Consultar_vehiculo"):
     Genero_Especificado = UserForGenre(Genero_Especificado)
     st.write(Genero_Especificado)
 st.title("")
+
 def main():
     st.title("Dashboard del PI2 en forma de muestra")
     st.markdown(
@@ -110,9 +111,19 @@ def main():
        <iframe title="DatasetMockup" width="1300" height="860" src="https://app.powerbi.com/view?r=eyJrIjoiZjRmOWFiOWUtZmE4Yy00MDcwLTllNjktNjE5NTcwZDY3OTJlIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9&pageName=ReportSection10f0c58045468d53ab10" frameborder="0" allowFullScreen="true"></iframe>
        </div>
         """,
+        
         unsafe_allow_html=True
     )
-
+    st.title("Mapa de puntos de carga electricos")
+    st.markdown(
+        """
+        <div style="display: flex; justify-content: center;">
+       <iframe title="DatasetMockup" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiZjRmOWFiOWUtZmE4Yy00MDcwLTllNjktNjE5NTcwZDY3OTJlIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9&pageName=ReportSection47db6ae08871719a306a" frameborder="0" allowFullScreen="true"></iframe>
+       </div>
+        """,
+        
+        unsafe_allow_html=True
+    )
 if __name__ == "__main__":
     main()
 
