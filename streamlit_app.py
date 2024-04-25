@@ -107,17 +107,9 @@ def main():
     st.markdown(
         """
         <div style="display: flex; justify-content: center;">
-       <iframe title="DatasetMockup" width="1300" height="860" src="https://app.powerbi.com/view?r=eyJrIjoiZjRmOWFiOWUtZmE4Yy00MDcwLTllNjktNjE5NTcwZDY3OTJlIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9&pageName=ReportSection10f0c58045468d53ab10" frameborder="0" allowFullScreen="true"></iframe></div>
+       <iframe title="DatasetMockup" width="1300" height="860" src="https://app.powerbi.com/view?r=eyJrIjoiZjRmOWFiOWUtZmE4Yy00MDcwLTllNjktNjE5NTcwZDY3OTJlIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9&pageName=ReportSection10f0c58045468d53ab10" frameborder="0" allowFullScreen="true"></iframe>
+       <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/eb8f25b9-0d6b-45f1-b154-bd274b70b99b/page/L7EyD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe></div>
         """,
-        unsafe_allow_html=True
-    )
-def main():
-    st.title("Dashboard del PI2 en forma de muestra")
-    st.markdown(
-        """
-        <div style="display: flex; justify-content: center;">
-       <iframe width="600" height="450" src="https://lookerstudio.google.com/embed/reporting/eb8f25b9-0d6b-45f1-b154-bd274b70b99b/page/L7EyD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-       """,
         unsafe_allow_html=True
     )
 
