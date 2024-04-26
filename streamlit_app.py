@@ -118,7 +118,7 @@ def main():
     st.markdown(
         """
         <div style="display: flex; justify-content: center;">
-       <iframe title="DatasetMockup" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiZjRmOWFiOWUtZmE4Yy00MDcwLTllNjktNjE5NTcwZDY3OTJlIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9&pageName=ReportSection47db6ae08871719a306a" frameborder="0" allowFullScreen="true"></iframe>
+       <iframe title="DatasetMockup" width="1300" height="860" src="https://app.powerbi.com/view?r=eyJrIjoiMjM3OGExNjItNTBmZS00MDhmLThmYzYtNDFlMTYzNWZmYWEyIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9" frameborder="0" allowFullScreen="false"></iframe>
        </div>
         """,
         
