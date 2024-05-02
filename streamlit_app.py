@@ -1,5 +1,6 @@
 import streamlit as st
 import Functions
+import pandas as pd
 
 
 st.set_page_config(page_title="Strategic Data Transform", page_icon="scr/fondo.jpg", layout="wide")
@@ -103,8 +104,6 @@ if st.button("Consultar_vehiculo"):
     st.write(Genero_Especificado)
 st.title("")
 
-def tablaeu_dashboard(url):
-    st.components.v1.iframe(url, width=800, height=600)
 
 def main():
     st.title("Dashboard del PI2 en forma de muestra")
@@ -129,13 +128,15 @@ def main():
         
         
     )
-    st.title("Integración de Tablero de Tableau en Streamlit")
-    st.write("Aquí puedes visualizar un tablero de Tableau:")
-
-    tableau_url = "https://public.tableau.com/views/Mapa_17146925571730/Hoja1?:language=es-ES&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
-    tablaeu_dashboard(tableau_url)
+    
+    
 if __name__ == "__main__":
     main()
+
+carga = pd.read_excel('data/cargas.xlsx')
+
+st.header('Puntos de carga en Nueva York')
+st.map(data= carga, color='red', zoom=7.5)
 
 with st.container():
     st.header("Equipo de trabajo")
