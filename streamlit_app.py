@@ -132,24 +132,10 @@ def main():
     st.title("Integración de Tablero de Tableau en Streamlit")
     st.write("Aquí puedes visualizar un tablero de Tableau:")
 
-    tableau_url = "https://public.tableau.com/app/profile/marcelo.yuba/viz/Mapa_17146925571730/Hoja1?publish=yes"
+    tableau_url = "https://public.tableau.com/views/Mapa_17146925571730/Hoja1?:language=es-ES&publish=yes&:sid=&:display_count=n&:origin=viz_share_link"
     tablaeu_dashboard(tableau_url)
 if __name__ == "__main__":
     main()
-
-def main2():
-    st.title("Mapa de puntos de carga electricos")
-    st.markdown(
-        """
-        <div style="display: flex; justify-content: center;">
-       <iframe title="DatasetMockup" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiZjRmOWFiOWUtZmE4Yy00MDcwLTllNjktNjE5NTcwZDY3OTJlIiwidCI6ImUyYjc5Nzc5LTBhODgtNDMzMS05YjQyLTM4NGNkNzFjODVkNyIsImMiOjR9&pageName=ReportSection47db6ae08871719a306a" frameborder="0" allowFullScreen="true"></iframe>
-       </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-if __name__ == "__main2__":
-    main2()
 
 with st.container():
     st.header("Equipo de trabajo")
