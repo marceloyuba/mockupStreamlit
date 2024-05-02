@@ -103,6 +103,9 @@ if st.button("Consultar_vehiculo"):
     st.write(Genero_Especificado)
 st.title("")
 
+def tablaeu_dashboard(url):
+    st.components.v1.iframe(url, width=800, height=600)
+
 def main():
     st.title("Dashboard del PI2 en forma de muestra")
     st.markdown(
@@ -123,7 +126,14 @@ def main():
         """,
         
         unsafe_allow_html=True
+        
+        
     )
+    st.title("Integración de Tablero de Tableau en Streamlit")
+    st.write("Aquí puedes visualizar un tablero de Tableau:")
+
+    tableau_url = "https://public.tableau.com/app/profile/marcelo.yuba/viz/Mapa_17146925571730/Hoja1?publish=yes"
+    tablaeu_dashboard(tableau_url)
 if __name__ == "__main__":
     main()
 
