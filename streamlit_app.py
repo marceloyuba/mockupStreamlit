@@ -133,7 +133,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-carga = pd.read_excel('data/cargas.xlsx')
+carga = pd.read_csv('data/cargas.csv')
 
 st.header('Puntos de carga en Nueva York')
 st.map(data= carga, color='red', zoom=7.5)
