@@ -133,10 +133,13 @@ def main():
 if __name__ == "__main__":
     main()
 
-carga = pd.read_csv('data/Cargas.csv')
+import numpy as np
 
-st.header('Puntos de carga en Nueva York')
-st.map(data=carga, color='red', zoom=7.5, lat='latitud', lon='longitud')
+df = pd.DataFrame(
+    np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
+    columns=['lat', 'lon'])
+
+st.map(df)
 
 with st.container():
     st.header("Equipo de trabajo")
