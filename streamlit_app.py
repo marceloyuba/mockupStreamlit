@@ -136,7 +136,7 @@ if __name__ == "__main__":
 carga = pd.read_csv('data/Cargas.csv')
 
 st.header('Puntos de carga en Nueva York')
-st.map(data=carga, color='red', zoom=7.5, lat='latitud')
+st.map(data=carga, color='red', zoom=7.5, lat='latitud', lon='longitud')
 
 with st.container():
     st.header("Equipo de trabajo")
