@@ -106,7 +106,7 @@ st.title("")
 
 
 def main():
-    st.title("Dashboard del PI2 en forma de muestra")
+    st.title("Dashboard de analisis de insercion de mercado")
     st.markdown(
         """
         <div style="display: flex; justify-content: center;">
@@ -116,7 +116,7 @@ def main():
         
         unsafe_allow_html=True
     )
-    st.title("Mapa de puntos de carga electricos")
+    st.title("Calculador de vehiculos")
     st.markdown(
         """
         <div style="display: flex; justify-content: center;">
