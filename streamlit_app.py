@@ -136,9 +136,7 @@ if __name__ == "__main__":
 with st.container():
     st.header("Equipo de trabajo")
     st.write("##")
-    st.markdown(""" 
-                #### Cristian Fontanilla = Data Science
-                
+    st.markdown("""                              
                 #### Elizabeth Torres = Data Engeenier
                                              
                 #### Marcelo Yuba = Team Leader / Data Analyst
