@@ -142,6 +142,12 @@ with st.container():
                 #### Marcelo Yuba = Team Leader / Data Analyst
                   """)
 
+
+
+st.image("scr/github.png",use_column_width=True)
+
+
+
 page_bg_img = f"""
 <style>
 
