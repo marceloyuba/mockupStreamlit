@@ -133,8 +133,10 @@ def main():
     
 if __name__ == "__main__":
     main()
+
 st.title("")
 
+st.title("Nuestro equipo de trabajo")
 
 with st.container():
      
