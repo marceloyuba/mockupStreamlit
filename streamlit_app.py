@@ -144,7 +144,7 @@ with st.container():
     
     
     with col1:
-        st.title("Nuestro Cliente")
+        st.header("Elizabeth Fraire")
         st.markdown(""" 
                 #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
                   """) 
