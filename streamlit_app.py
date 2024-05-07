@@ -148,7 +148,7 @@ with st.container():
                   """) 
     
     with col2:
-        imagen = "scr/eli.png"  
+        imagen = "scr/Eli.png"  
         st.image(imagen, use_column_width=True, output_format='auto')    
 
 with st.container():
