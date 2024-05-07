@@ -130,7 +130,7 @@ except Exception as e:
     st.error(f'Ocurrio un error al cargar el modelo: {str(e)}')
     modelo_entrenado = None
 
-st.set_page_config(page_title="Prediccion tipo de vehiculo", page_icon="📹")
+st.set_page_config(page_title="Prediccion tipo de vehiculo")
 
 st.markdown("# Predicción tipo de vehiculo")
 st.sidebar.header("Predicción tipo de vechiculo")
