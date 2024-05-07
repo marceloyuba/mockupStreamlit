@@ -1,5 +1,6 @@
 import numpy as np
 import pickle
+import xgboost as xgb
 import streamlit as st
 from streamlit.hello.utils import show_code
 import Functions
