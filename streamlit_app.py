@@ -1,6 +1,7 @@
+import numpy as np
+import pickle
 import streamlit as st
-import Functions
-import pandas as pd
+from streamlit.hello.utils import show_code
 
 
 st.set_page_config(page_title="Strategic Data Transform", page_icon="scr/fondo.jpg", layout="wide")
@@ -105,12 +106,6 @@ if st.button("Consultar_vehiculo"):
 
 st.title("")
       
-from typing import Any
-import xgboost
-import numpy as np
-import pickle
-import streamlit as st
-from streamlit.hello.utils import show_code
 
 def tipo_vehiculo(mes, dia_inicio, hora_inicio, hora_fin, distancia_viaje, ubicacion_inicio, ubicacion_fin, pax, modelo_entrenado):
 
