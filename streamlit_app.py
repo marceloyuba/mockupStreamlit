@@ -147,8 +147,10 @@ with st.container():
         st.header("Elizabeth Fraire")
         st.markdown(""" 
                 #### Data Science, Data Engienering
-                # 
-                # """) 
+                #### as
+                #### asda
+                
+                """) 
     
     with col2:
         imagen = "scr/Eli.jpg"  
