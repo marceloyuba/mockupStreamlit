@@ -155,7 +155,7 @@ with st.container():
     with col2:
         imagen = "scr/Eli.jpg"  
         st.image(imagen, width=250, use_column_width=False, output_format='auto')    
-
+st.title("")
 with st.container():
      
     col1, col2 = st.columns(column_widths)
