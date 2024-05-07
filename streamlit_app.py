@@ -127,7 +127,7 @@ except Exception as e:
     st.error(f'Ocurrio un error al cargar el modelo: {str(e)}')
     modelo_entrenado = None
 
-st.set_page_config(page_title="Prediccion tipo de vehiculo")
+# st.set_page_config(page_title="Prediccion tipo de vehiculo")
 
 st.markdown("# Predicción tipo de vehiculo")
 st.sidebar.header("Predicción tipo de vechiculo")
@@ -149,8 +149,7 @@ if st.button('Predecir'):
         resultado(tipo_vehiculo_recomendado)
     except Exception as e:
         st.error(f'Ocurrio un error en los datos de entrada: {str(e)}')
-
-    
+  
 def main():
     st.title("Dashboard de analisis de insercion de mercado")
     st.markdown(
