@@ -164,11 +164,13 @@ with st.container():
     with col1:
         st.title("Nuestro Cliente")
         st.markdown(""" 
-                #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
-                  """) 
-    
+                #### Departamento: Data Analist, Graphic Design
+                #### Background: Diseño multimedial, Publicidad grafica, E-Commerce
+                #### Linkedin: [Acceder a su perfil](www.linkedin.com/in/marcelo-yuba)
+                #### Github: [Acceder a su perfil](https://github.com/marceloyuba)
+                """) 
     with col2:
-        imagen = "scr/yo.png"  
+        imagen = "scr/fotoLI.jpg"  
         st.image(imagen, width=250, use_column_width=False, output_format='auto')   
 
 
