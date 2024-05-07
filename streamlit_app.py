@@ -130,7 +130,7 @@ except Exception as e:
 # st.set_page_config(page_title="Prediccion tipo de vehiculo")
 
 st.markdown("# Predicción tipo de vehiculo")
-st.sidebar.header("Predicción tipo de vechiculo")
+
 st.write("""Esta app predice el tipo de vehículo recomendado según las 
         características dadas""")
 
@@ -138,7 +138,7 @@ mes = st.number_input('Mes:', min_value=1, max_value=12)
 dia_inicio = st.number_input('Día de inicio:', min_value=1, max_value=31)
 hora_inicio = st.number_input('Hora de inicio:', min_value=0, max_value=23)
 hora_fin = st.number_input('Hora de fin:', min_value=0, max_value=23)
-distancia_viaje = st.text_input('Distancia del viaje (en millas): ')
+distancia_viaje = st.text_input('Distancia del viaje (en millas):' , min_value=0, max_value=50)
 ubicacion_inicio =st.number_input('Ubicación de inicio (1 a 265):', min_value=1, max_value= 265)
 ubicacion_fin = st.number_input('Ubicación de fin (1 a 265):', min_value= 1, max_value= 265)
 pax = st.number_input('Número de pasajeros(1 a 7):', min_value=1)
