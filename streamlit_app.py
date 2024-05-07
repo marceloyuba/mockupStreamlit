@@ -149,7 +149,7 @@ with st.container():
     
     with col2:
         imagen = "scr/Eli.jpg"  
-        st.image(imagen, width=400, use_column_width=False, output_format='auto')    
+        st.image(imagen, width=300, use_column_width=False, output_format='auto')    
 
 with st.container():
      
