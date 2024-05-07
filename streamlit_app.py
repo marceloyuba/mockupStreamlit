@@ -105,9 +105,6 @@ if st.button("Consultar_vehiculo"):
     st.write(Genero_Especificado)
 
 st.title("")
-import pickle
-import numpy as np
-import streamlit as st
 
 def tipo_vehiculo(mes, dia_inicio, hora_inicio, hora_fin, distancia_viaje, ubicacion_inicio, ubicacion_fin, pax, modelo_entrenado):
     try:
