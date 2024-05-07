@@ -162,7 +162,7 @@ with st.container():
     
     
     with col1:
-        st.title("Marcelo Yuba")
+        st.header("Marcelo Yuba")
         st.markdown(""" 
                 #### Departamento: Data Analist, Graphic Design
                 #### Background: Diseño multimedial, Publicidad grafica, E-Commerce
@@ -171,7 +171,7 @@ with st.container():
                 """) 
     with col2:
         imagen = "scr/fotoLI.jpg"  
-        st.image(imagen, width=220, use_column_width=False, output_format='auto')   
+        st.image(imagen, width=250, use_column_width=False, output_format='auto')   
 
 
 page_bg_img = f"""
