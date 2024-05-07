@@ -149,7 +149,7 @@ with st.container():
     
     with col2:
         imagen = "scr/Eli.png"  
-        st.image(imagen, width=50, use_column_width=True, output_format='auto')    
+        st.image(imagen, width=50, use_column_width=False, output_format='auto')    
 
 with st.container():
      
@@ -164,7 +164,7 @@ with st.container():
     
     with col2:
         imagen = "scr/yo.png"  
-        st.image(imagen, width=50, use_column_width=True, output_format='auto')   
+        st.image(imagen, width=50, use_column_width=False, output_format='auto')   
 
 
 page_bg_img = f"""
