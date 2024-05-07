@@ -146,15 +146,15 @@ with st.container():
     with col1:
         st.header("Elizabeth Fraire")
         st.markdown(""" 
-                #### Departamento: Data Science, Data Engineering, Data Analist
-                #### Background: Biologa
-                #### Linkedin: "[Linkedin >](https://dashboardsiniestrosviales.observablehq.cloud/documentaci-n/)"
-                
+                #### Departamento: Data Science, Engineering, Analist
+                #### Background: Ciencias Biológicas
+                #### Linkedin: [Acceder a su perfil](https://www.linkedin.com/in/veronica-elizabeth-torres-fraire-a830bb234/)
+                #### Github: [Acceder a su perfil](https://github.com/Bethcosima)
                 """) 
     
     with col2:
         imagen = "scr/Eli.jpg"  
-        st.image(imagen, width=200, use_column_width=False, output_format='auto')    
+        st.image(imagen, width=250, use_column_width=False, output_format='auto')    
 
 with st.container():
      
@@ -169,7 +169,7 @@ with st.container():
     
     with col2:
         imagen = "scr/yo.png"  
-        st.image(imagen, use_column_width=False, output_format='auto')   
+        st.image(imagen, width=250, use_column_width=False, output_format='auto')   
 
 
 page_bg_img = f"""
