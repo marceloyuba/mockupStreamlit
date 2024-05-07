@@ -134,7 +134,7 @@ if __name__ == "__main__":
     main()
 st.title("")
 
-st.image("scr/github.png", align='center', output_format='auto')
+st.image("scr/github.png", output_format='auto')
 
 
 
