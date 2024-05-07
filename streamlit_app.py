@@ -104,36 +104,7 @@ if st.button("Consultar_vehiculo"):
     st.write(Genero_Especificado)
 
 st.title("")
-
-with st.container():
-     
-    col1, col2 = st.columns(column_widths)
-    
-    
-    with col1:
-        st.title("Nuestro Cliente")
-        st.markdown(""" 
-                #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
-                  """) 
-    
-    with col2:
-        imagen = "scr/eli.png"  
-        st.image(imagen, width=500, use_column_width=True, output_format='auto')    
-
-with st.container():
-     
-    col1, col2 = st.columns(column_widths)
-    
-    
-    with col1:
-        st.title("Nuestro Cliente")
-        st.markdown(""" 
-                #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
-                  """) 
-    
-    with col2:
-        imagen = "scr/yo.png"  
-        st.image(imagen, width=500, use_column_width=True, output_format='auto')            
+      
 
 def main():
     st.title("Dashboard de analisis de insercion de mercado")
@@ -165,7 +136,35 @@ if __name__ == "__main__":
 st.title("")
 
 
+with st.container():
+     
+    col1, col2 = st.columns(column_widths)
+    
+    
+    with col1:
+        st.title("Nuestro Cliente")
+        st.markdown(""" 
+                #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
+                  """) 
+    
+    with col2:
+        imagen = "scr/eli.png"  
+        st.image(imagen, width=500, use_column_width=True, output_format='auto')    
 
+with st.container():
+     
+    col1, col2 = st.columns(column_widths)
+    
+    
+    with col1:
+        st.title("Nuestro Cliente")
+        st.markdown(""" 
+                #### Empresa líder en el mercado de transporte de pasajeros de media y larga distancia, con una larga trayectoria, paso a manos de Flix North America y Juntos, FlixBus, Greyhound y sus socios continúan ofreciendo una experiencia de autobús interurbano de clase mundial inteligente, ecológica y moderna, brindando la mejor opción asequible para aún más personas que viajan por los Estados Unidos.
+                  """) 
+    
+    with col2:
+        imagen = "scr/yo.png"  
+        st.image(imagen, width=500, use_column_width=True, output_format='auto')   
 
 
 page_bg_img = f"""
