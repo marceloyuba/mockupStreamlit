@@ -146,9 +146,9 @@ with st.container():
     with col1:
         st.header("Elizabeth Fraire")
         st.markdown(""" 
-                #### Data Science, Data Engienering
-                #### as
-                #### asda
+                #### Departamento: Data Science, Data Engineering, Data Analist
+                #### Background: Biologa
+                #### Linkedin: "[Linkedin >](https://dashboardsiniestrosviales.observablehq.cloud/documentaci-n/)"
                 
                 """) 
     
