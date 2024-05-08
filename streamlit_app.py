@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit.hello.utils import show_code
 import Functions
 import xgboost as xgb
-
+import gzip
 st.set_page_config(page_title="Strategic Data Transform", page_icon="scr/fondo.jpg", layout="wide")
            
 def local_css(file_name):
@@ -114,7 +114,7 @@ from sklearn.preprocessing import LabelEncoder
 import xgboost as xgb
 
 def cargar_modelo(ruta_modelo):
-    with open(ruta_modelo, 'rb') as f:
+    with gzip.open(ruta_modelo, 'rb') as f:
         modelo = pickle.load(f)
     return modelo
 
