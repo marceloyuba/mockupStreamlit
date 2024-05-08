@@ -1,9 +1,9 @@
 import numpy as np
 import pickle
-import xgboost as xgb
 import streamlit as st
 from streamlit.hello.utils import show_code
 import Functions
+import xgboost as xgb
 
 st.set_page_config(page_title="Strategic Data Transform", page_icon="scr/fondo.jpg", layout="wide")
            
@@ -106,52 +106,52 @@ if st.button("Consultar_vehiculo"):
     st.write(Genero_Especificado)
 
 st.title("")
+import pickle
+import numpy as np
+import pandas as pd
+import streamlit as st
+from sklearn.preprocessing import LabelEncoder
+import xgboost as xgb
 
-def tipo_vehiculo(mes, dia_inicio, hora_inicio, hora_fin, distancia_viaje, ubicacion_inicio, ubicacion_fin, pax, modelo_entrenado):
-    try:
-        datos = np.array([[mes, dia_inicio,hora_inicio,hora_fin,distancia_viaje,ubicacion_inicio,ubicacion_fin,pax]])
-        prediccion = modelo_entrenado.predict(datos)
-        tipovehiculo = cod_num.inverse_transform(prediccion)
-        return tipovehiculo
-    except Exception as e:
-        st.error(f'Ocurrio un error al realizar la prediccion: {str(e)}')
-        return None
+def cargar_modelo(ruta_modelo):
+    with open(ruta_modelo, 'rb') as f:
+        modelo = pickle.load(f)
+    return modelo
 
-def resultado(tipo_vehiculo_recomendado):
-    st.success(f'Tipo de vehículo recomendado: {tipo_vehiculo_recomendado[0]}')
+def predecir_vehiculo(datos, modelo):
+    # Realizar la predicción usando el modelo
+    prediccion = modelo.predict(datos)
+    return prediccion
 
-try:
-    with open('modelo_entrenado.pkl', 'rb') as f:
-        modelo_entrenado = pickle.load(f)
-        cod_num = modelo_entrenado
-except Exception as e:
-    st.error(f'Ocurrio un error al cargar el modelo: {str(e)}')
-    modelo_entrenado = None
+def cargar_interfaz():
+    st.title('Sistema de Recomendación de Vehículos')
 
-# st.set_page_config(page_title="Prediccion tipo de vehiculo")
+    # Cargar el modelo entrenado
+    modelo_entrenado = cargar_modelo('xtrain.pkl')
 
-st.markdown("# Predicción tipo de vehiculo")
+    # Interfaz de usuario para ingresar los datos de entrada
+    st.sidebar.header('Ingrese los datos de viaje:')
+    mes = st.sidebar.selectbox('Mes', ['Enero', 'Febrero', 'Marzo', ...])
+    dia_inicio = st.sidebar.number_input('Día de inicio', min_value=1, max_value=31, value=1)
+    hora_inicio = st.sidebar.number_input('Hora de inicio', min_value=0, max_value=23, value=0)
+    hora_fin = st.sidebar.number_input('Hora de fin', min_value=0, max_value=23, value=0)
+    distancia_viaje = st.sidebar.number_input('Distancia de viaje (km)', min_value=0.0)
+    ubicacion_inicio = st.sidebar.text_input('Ubicación de inicio')
+    ubicacion_fin = st.sidebar.text_input('Ubicación final')
+    pax = st.sidebar.number_input('Número de pasajeros', min_value=1)
 
-st.write("""Esta app predice el tipo de vehículo recomendado según las 
-        características dadas""")
+    # Ejemplo de datos de entrada para predecir
+    datos_ejemplo = np.array([[mes, dia_inicio, hora_inicio, hora_fin, distancia_viaje, ubicacion_inicio, ubicacion_fin, pax]])
 
-mes = st.number_input('Mes:', min_value=1, max_value=12)
-dia_inicio = st.number_input('Día de inicio:', min_value=1, max_value=31)
-hora_inicio = st.number_input('Hora de inicio:', min_value=0, max_value=23)
-hora_fin = st.number_input('Hora de fin:', min_value=0, max_value=23)
-distancia_viaje = st.text_input('Distancia del viaje (en millas): ' )
-ubicacion_inicio =st.number_input('Ubicación de inicio (1 a 265):', min_value=1, max_value= 265)
-ubicacion_fin = st.number_input('Ubicación de fin (1 a 265):', min_value= 1, max_value= 265)
-pax = st.number_input('Número de pasajeros(1 a 7):', min_value=1)
-
-if st.button('Predecir'):
-    try:
-        tipo_vehiculo_recomendado = tipo_vehiculo(mes, dia_inicio, hora_inicio, hora_fin, distancia_viaje, ubicacion_inicio, ubicacion_fin, pax, cod_num)
-        resultado(tipo_vehiculo_recomendado)
-    except Exception as e:
-        st.error(f'Ocurrio un error en los datos de entrada: {str(e)}')
+    # Realizar la predicción cuando se hace clic en el botón
+    if st.sidebar.button('Predecir'):
+        # Realizar la predicción usando la función predefinida
+        tipo_vehiculo_predicho = predecir_vehiculo(datos_ejemplo, modelo_entrenado)
+        st.write(f'Se recomienda el vehículo: {tipo_vehiculo_predicho}')
   
 def main():
+    cargar_interfaz()
+
     st.title("Dashboard de analisis de insercion de mercado")
     st.markdown(
         """
