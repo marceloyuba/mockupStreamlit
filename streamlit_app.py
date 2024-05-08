@@ -110,7 +110,6 @@ import pickle
 import numpy as np
 import pandas as pd
 import streamlit as st
-from sklearn.preprocessing import LabelEncoder
 import xgboost as xgb
 
 def cargar_modelo(ruta_modelo):
