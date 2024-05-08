@@ -147,9 +147,9 @@ def cargar_interfaz():
         # Realizar la predicción usando la función predefinida
         tipo_vehiculo_predicho = predecir_vehiculo(datos_ejemplo, modelo_entrenado)
         st.write(f'Se recomienda el vehículo: {tipo_vehiculo_predicho}')
-  
+cargar_interfaz()  
 def main():
-    
+    cargar_interfaz()
 
     st.title("Dashboard de analisis de insercion de mercado")
     st.markdown(
