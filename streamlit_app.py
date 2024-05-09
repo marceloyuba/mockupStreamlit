@@ -35,11 +35,11 @@ with st.container():
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-    column_widths = [2, 1]
+    
+column_widths = [2, 1]
 with st.container():
      
-    col1, col2 = st.columns(column_widths)
-    
+    col1, col2 = st.columns(column_widths)   
     
     with col1:
         st.title("Nuestro Cliente")
@@ -49,10 +49,10 @@ with st.container():
     
     with col2:
         imagen = "scr/cliente.png"  
-        st.image(imagen, width=500, use_column_width=True, output_format='auto')    
-           
+        st.image(imagen, width=500, use_column_width=True, output_format='auto')        
 
 st.title("")
+
 with st.container():
     col1, col2 = st.columns(column_widths)
     
@@ -74,18 +74,9 @@ with st.container():
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-    
-    st.markdown(""" 
-                # Mostramos nuestros resultados""")
-   
-    
-
-
 st.title("")
 
-
-def main():
-    
+def main():    
 
     st.title("Dashboard de analisis de insercion de mercado")
     st.markdown(
