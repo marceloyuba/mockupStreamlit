@@ -106,50 +106,10 @@ if st.button("Consultar_vehiculo"):
     st.write(Genero_Especificado)
 
 st.title("")
-import pickle
-import numpy as np
-import pandas as pd
-import streamlit as st
-import xgboost as xgb
 
-def cargar_modelo(ruta_modelo):
-    with gzip.open(ruta_modelo, 'rb') as f:
-        modelo = pickle.load(f)
-    return modelo
-
-def predecir_vehiculo(datos, modelo):
-    # Realizar la predicción usando el modelo
-    prediccion = modelo.predict(datos)
-    return prediccion
-
-def cargar_interfaz():
-    st.title('Sistema de Recomendación de Vehículos')
-
-    # Cargar el modelo entrenado
-    modelo_entrenado = cargar_modelo('xtrain.pkl')
-
-    # Interfaz de usuario para ingresar los datos de entrada
-    st.sidebar.header('Ingrese los datos de viaje:')
-    mes = st.sidebar.selectbox('Mes', ['Enero', 'Febrero', 'Marzo', ...])
-    dia_inicio = st.sidebar.number_input('Día de inicio', min_value=1, max_value=31, value=1)
-    hora_inicio = st.sidebar.number_input('Hora de inicio', min_value=0, max_value=23, value=0)
-    hora_fin = st.sidebar.number_input('Hora de fin', min_value=0, max_value=23, value=0)
-    distancia_viaje = st.sidebar.number_input('Distancia de viaje (km)', min_value=0.0)
-    ubicacion_inicio = st.sidebar.text_input('Ubicación de inicio')
-    ubicacion_fin = st.sidebar.text_input('Ubicación final')
-    pax = st.sidebar.number_input('Número de pasajeros', min_value=1)
-
-    # Ejemplo de datos de entrada para predecir
-    datos_ejemplo = np.array([[mes, dia_inicio, hora_inicio, hora_fin, distancia_viaje, ubicacion_inicio, ubicacion_fin, pax]])
-
-    # Realizar la predicción cuando se hace clic en el botón
-    if st.sidebar.button('Predecir'):
-        # Realizar la predicción usando la función predefinida
-        tipo_vehiculo_predicho = predecir_vehiculo(datos_ejemplo, modelo_entrenado)
-        st.write(f'Se recomienda el vehículo: {tipo_vehiculo_predicho}')
 
 def main():
-    cargar_interfaz()
+    
 
     st.title("Dashboard de analisis de insercion de mercado")
     st.markdown(
