@@ -79,31 +79,7 @@ with st.container():
                 # Mostramos nuestros resultados""")
    
     
-def Developer(desarrollador):
-    resultadodeveloper = Functions.Developer(desarrollador)
-    return resultadodeveloper
-st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
-st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
-st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-st.subheader("Consulta de puntos mas solicitados en la ciudad")
-desarrollador = st.text_input("", "Indique el codigo de la region")
-if st.button("Consultar"):
-    developer_result = Developer(desarrollador)
-    st.write(developer_result)
 
-def UserForGenre(Genero_Especificado):
-    resultadoReview = Functions.UserForGenre(Genero_Especificado)
-    return resultadoReview
-st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
-st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
-st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
-
-st.header("Calcule que vehiculo es el adecuado para su viaje")
-st.subheader("Coloque una zona (Manhattan, Brookyn, Queen, Bronx, Staten Island)")
-Genero_Especificado = st.text_input("", "")
-if st.button("Consultar_vehiculo"):
-    Genero_Especificado = UserForGenre(Genero_Especificado)
-    st.write(Genero_Especificado)
 
 st.title("")
 
