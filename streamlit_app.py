@@ -9,7 +9,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 local_css("style/style.css")
-st.title("")
+
 with st.container():
     
     st.image("scr/titulo.png",use_column_width=True, output_format='auto')
@@ -18,16 +18,7 @@ with st.container():
 
 st.write("<hr style='border-top: 1px solid grey;'>", unsafe_allow_html=True)      
 with st.container():
-    st.markdown(
-    """
-    <style>
-        a {
-            color: red; /* Cambia el color del texto del enlace a rojo */
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-   )
+    
     st.markdown('<style>h4{color: white;}, font=</style>', unsafe_allow_html=True)    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
