@@ -72,6 +72,8 @@ def main():
         
         unsafe_allow_html=True
     )
+    st.title("")
+    st.write("<hr style='border-top: 1px solid grey;'>", unsafe_allow_html=True)   
     st.title("Calculador de vehiculos")
     st.markdown(
         """
