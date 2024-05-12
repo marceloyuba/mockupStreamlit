@@ -16,7 +16,7 @@ with st.container():
     st.title("")
     st.image("scr/logo.png", use_column_width=True, output_format='auto')
 
-  
+st.write("<hr style='border-top: 1px solid grey;'>", unsafe_allow_html=True)      
 with st.container():
     st.markdown(
     """
@@ -49,7 +49,7 @@ with st.container():
         st.image(imagen, width=500, use_column_width=True, output_format='auto')        
 
 st.title("")
-
+st.write("<hr style='border-top: 1px solid grey;'>", unsafe_allow_html=True)    
 with st.container():
     col1, col2 = st.columns(column_widths)
     
@@ -57,22 +57,18 @@ with st.container():
         st.title("Nuestra mision")        
         st.markdown("""
                 #### Desde la expansión en 2021, Nuestro cliente analiza nuevos mercados fuera del transporte de buses, por eso nos encomendó analizar la inserción al negocio de los viajes en automóviles, analizando a su competidores directos (Taxis, Uber, Lyft) y comenzando por la ciudad de Nueva York, ya que la misma tiene una de las redes mas complejas de transporte en todo el pais, nuestro trabajo es analizar si es viable el ingreso al sistema cumpliendo con las regulaciones impuestas por el gobierno respecto a tener una ciudad libre de emisiones contaminantes""") 
-    
-    
+        
     with col2:
         imagen = "scr/mision.png"  
         st.image(imagen, width=500, use_column_width=True, output_format='auto')
-    
-    st.subheader("Datos relevantes del proyecto")
-    st.write("[Nuestros datos >](https://dashboardsiniestrosviales.observablehq.cloud/documentaci-n/)")
-       
 
+      
 with st.container():    
     st.markdown('<style>h3 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h2 {color: white;}, font=</style>', unsafe_allow_html=True)
     st.markdown('<style>h1 {color: white;}, font=</style>', unsafe_allow_html=True)
 st.title("")
-
+st.write("<hr style='border-top: 1px solid grey;'>", unsafe_allow_html=True)    
 def main():    
 
     st.title("Dashboard de analisis de insercion de mercado")
