@@ -44,7 +44,7 @@ with st.container():
     with col2:
         imagen = "scr/cliente.png"  
         st.image(imagen, width=500, use_column_width=True, output_format='auto')        
-
+st.write("<hr style='border-top: 1px solid grey;'>", unsafe_allow_html=True) 
 st.title("")
 st.write("<hr style='border-top: 1px solid grey;'>", unsafe_allow_html=True)    
 with st.container():
