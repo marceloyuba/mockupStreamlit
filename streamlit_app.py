@@ -16,7 +16,7 @@ with st.container():
     st.title("")
     st.image("scr/logo.png", use_column_width=True, output_format='auto')
 
-st.write("<hr style='border-top: 1px solid grey;'>", unsafe_allow_html=True)      
+
 with st.container():
     
     st.markdown('<style>h4{color: white;}, font=</style>', unsafe_allow_html=True)    
