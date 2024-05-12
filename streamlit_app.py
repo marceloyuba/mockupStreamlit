@@ -10,12 +10,18 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
+column_widths = [2, 1, 2]
 with st.container():
     
-    st.image("scr/titulo.png",use_column_width=True, output_format='auto')
-    st.title("")
-    st.image("scr/logo.png", use_column_width=True, output_format='auto')
-
+    col1, col2, col3 = st.columns(column_widths)   
+    with col1:
+        st.image("scr/logoGreyhound.png",width=550, use_column_width=True, output_format='auto')
+        
+    with col2:
+        st.title("")
+          
+    with col3: 
+        st.image("scr/SDTLogoC.png",width=1200, use_column_width=True, output_format='auto')
 
 with st.container():
     
